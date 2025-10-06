@@ -57,3 +57,34 @@ p {
     border-radius: 10px;
   /*  border: 3px solid #000000; */
 }
+
+@media screen and (max-width: 768px) {
+    p {
+        position: relative;
+        top: 0;
+        right: 0;
+        margin: 20px 5%;
+        font-size: 16px; /* optional smaller font on mobile */
+    }
+
+    #me {
+        position: relative;
+        top: 0;
+        left: 0;
+        width: 90%;
+        max-width: 300px;
+        display: block;
+        margin: 20px auto;
+    }
+
+    ul li {
+        float: none;
+        text-align: center;
+    }
+
+    ul li.title {
+        float: none;
+        display: block;
+        text-align: center;
+    }
+}
