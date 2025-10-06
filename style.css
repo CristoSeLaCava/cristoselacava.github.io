@@ -4,6 +4,43 @@ body {
     font-size: 18px;
 }
 
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #FFFFFF;
+}
+
+ul li {
+  float: right;
+}
+
+ul li a {
+  display: block;
+  color: black;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+ul li a:hover {
+  background-color: #C4C2C2;
+}
+
+ul li.title {
+  float: left;              
+  font-size: 30px;
+  font-weight: bold;
+  padding: 14px 16px;
+}
+
+/*h1 {
+    position: fixed;
+    left: 10%;
+    margin-right: 5%;
+} */
+
 p {
     position: fixed;
     top: 25%;
