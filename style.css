@@ -24,8 +24,16 @@ ul li a {
   text-decoration: none;
 }
 
-ul li a:hover {
+/*ul li a:hover {
   background-color: #C4C2C2;
+}*/
+
+ul li a:hover:not(.active) {
+  background-color: #C4C2C2;
+}
+
+ul li a.active {
+  background-color: #8f8f8f;
 }
 
 ul li.title {
