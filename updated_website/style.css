@@ -20,6 +20,116 @@ body {
     min-height: 100vh;
 }
 
+/* ---------- Preloader ----------------- */
+
+.preloader {
+  position: fixed;
+  inset: 0;
+  z-index: 9999;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  font-family: Arial, sans-serif;
+  color: #ffffff;
+  background-color: #000;
+  transition: opacity 0.4s ease, visibility 0.4s ease;
+}
+ 
+.preloader.is-hidden {
+  opacity: 0;
+  visibility: hidden;
+  pointer-events: none;
+}
+ 
+.loading-text {
+  margin-top: 20px;
+  font-size: 18px;
+  font-weight: bold;
+}
+ 
+.atom {
+  position: relative;
+  width: 100px;
+  height: 100px;
+  animation: rotate 4s linear infinite;
+}
+ 
+.nucleus {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 20px;
+  height: 20px;
+  background-color: #ff5722;
+  border-radius: 50%;
+  transform: translate(-50%, -50%);
+}
+ 
+.orbit {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 100%;
+  height: 100%;
+  border: 1px solid rgba(255, 255, 255);
+  border-radius: 50%;
+  transform: translate(-50%, -50%);
+}
+ 
+.orbit1 .electron {
+  animation: spin 1.5s linear infinite;
+}
+ 
+.orbit2 {
+  width: 70px;
+  height: 70px;
+}
+ 
+.orbit2 .electron {
+  animation: spin 2s linear infinite;
+}
+ 
+.orbit3 {
+  width: 50px;
+  height: 50px;
+}
+ 
+.orbit3 .electron {
+  animation: spin 2.5s linear infinite;
+}
+ 
+.electron {
+  position: absolute;
+  top: 0;
+  left: 50%;
+  width: 10px;
+  height: 10px;
+  background-color: #4db2ec;
+  border-radius: 50%;
+  transform: translate(-50%, -50%);
+}
+ 
+@keyframes spin {
+  0% {
+    transform: rotate(0deg) translateX(50px) rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg) translateX(50px) rotate(-360deg);
+  }
+}
+ 
+@keyframes rotate {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+
 /* ---------- Header ---------- */
 
 .site-header {
