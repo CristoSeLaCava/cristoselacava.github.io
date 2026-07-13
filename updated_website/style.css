@@ -129,7 +129,6 @@ body {
   }
 }
 
-
 /* ---------- Header ---------- */
 
 .site-header {
@@ -169,6 +168,13 @@ body {
 .site-header .nav-link.active{
     color: #000;
     text-decoration: underline;
+}
+
+.nav-icon {
+    width: 2rem;
+    height: 2rem;
+    vertical-align: middle;
+    margin-right: 0.25rem;
 }
 
 /* ---------- Home page ---------- */
