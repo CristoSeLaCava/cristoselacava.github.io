@@ -157,18 +157,18 @@ body {
     gap: 0.25rem 1rem;
 }
 
-.site-header .nav-link {
+/*.site-header .nav-link {
     color: #000;
 }
 
-.site-header .nav-link:hover{
+.site-header .nav-link:hover {
     color: #6c757d;
 }
 
-.site-header .nav-link.active{
+.site-header .nav-link.active {
     color: #000;
     text-decoration: underline;
-}
+}*/
 
 .nav-icon {
     width: 2rem;
